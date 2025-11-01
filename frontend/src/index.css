@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg1:#0c0f1b;
+  --bg2:#171b2e;
+  --panel:#171b2e;
+  --ring:#2a2f4a;
+  --text:#e7eaf6;
+}
+
+html, body, #root { height: 100%; }
+body {
+  background: linear-gradient(160deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+/* modal glow */
+.modal-panel {
+  box-shadow: 0 10px 30px rgba(0,0,0,.5), 0 0 0 1px rgba(42,47,74,.6), 0 0 20px rgba(110,168,254,.2);
+}
+/* fader track vertical helper */
+.fader-rail {
+  height: 240px;
+  width: 56px;
+  position: relative;
+}
+.fader-track {
+  position:absolute;
+  width:8px;
+  height:200px;
+  top:20px;
+  left:24px;
+  background:#0a0d1c;
+  border:1px solid var(--ring);
+  border-radius:999px;
+}
+.fader-cap {
+  position:absolute;
+  width:48px;
+  height:28px;
+  left:4px;
+  border-radius:10px;
+  background:linear-gradient(#4c63d3,#2a36a6);
+  border:1px solid #6ea8fe;
+  box-shadow:0 6px 14px rgba(0,0,0,.45);
+}
